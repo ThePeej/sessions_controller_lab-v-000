@@ -1,6 +1,6 @@
 
 <% if !!session[:username] %>
-  <%= "hi, #{session[username]}" %>
+  <%= "hi, #{session[:name]}" %>
   <form action="/logout">
     <input type="submit" value="logout"/>
   </form>
