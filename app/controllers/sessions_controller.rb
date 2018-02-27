@@ -7,3 +7,7 @@ class SessionsController < ApplicationController
     session[:username] = params[:name]
     render 'index'
   end
+
+  def destroy
+    session.clear
+  end
