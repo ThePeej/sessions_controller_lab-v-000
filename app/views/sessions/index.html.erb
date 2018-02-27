@@ -1,2 +1,3 @@
 
-<% if session[:username]
+<% if !!session[:username] %>
+  <%= "hi, #{session[username]}"
